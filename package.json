@@ -1,10 +1,10 @@
 {
   "name": "test-nest-graphql",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "0.0.2",
+  "description": "Тестовое задание по NodeJS",
+  "author": "Stanislav V Vyaliy",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -19,6 +19,9 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "resolutions": {
+    "node-fetch": "^2"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
